@@ -6,6 +6,11 @@
  * Made By MaterializeCSS.com
  */
 
+ @font-face {
+    font-family: infinity;
+    src: url(fonts/infinity.woff);
+}
+
 nav#top-nav {
 /*  box-shadow: none;
   position: absolute; */
@@ -15,9 +20,22 @@ nav a, nav ul a, nav .brand-logo {
   color: #000;
 }
 
-nav .brand-logo {
-  font-size: 1.5rem;
+nav .brand-logo-presents {
+  font-size: 0.85rem;
   padding: 0 10px;
+  position: relative;
+  top: -20px;
+}
+
+nav .brand-logo {
+  font-size: 30px;
+  color: #2abbad;
+  padding: 0 10px;
+  font-family: fantasy, infinity, sans-serif;
+  position:relative;
+  left: -165px;
+  top: 8px;
+  text-transform: uppercase;
 }
 
 p {
@@ -60,6 +78,10 @@ body > div {
 
 .parallax-container + .container {
   min-height: 600px;
+}
+
+nav .dropdown-content li {
+    min-height: 20px;
 }
 
 @media only screen and (max-width : 992px) {
